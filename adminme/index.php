@@ -64,7 +64,7 @@ require '_login.php';
                    <div class="metro span12">
                       <div class="metro-sections">
                         <div class="metro-section" id="section1">
-                            <a class="tile wide imagetext bg-color-orange" href="./statsgrals.php?filtro-type=PREVENTA">
+                            <a class="tile wide imagetext bg-color-orange" href="./statsgrals-pre.php">
                                <div class="image-wrapper">
                               <span class="icon  icon-chart"></span>
                                 </div>
@@ -76,7 +76,7 @@ require '_login.php';
                         </div>
                           
                           <div class="metro-section" id="section1">
-                            <a class="tile wide imagetext bg-color-blue" href="./statsgrals.php?filtro-type=POSTVENTA">
+                            <a class="tile wide imagetext bg-color-blue" href="./statsgrals-post.php">
                                <div class="image-wrapper">
                               <span class="icon  icon-stats"></span>
                                 </div>

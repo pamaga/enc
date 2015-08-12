@@ -55,27 +55,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Qué opinión tiene sobre la calidad de nuestros productos?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0009" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0009" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0009" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0009" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0009" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -83,27 +83,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Y sobre la variedad ofrecida?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0010" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0010" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0010" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0010" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0010" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -111,27 +111,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Cómo calificaría el nivel de precios?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0011" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0011" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0011" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0011" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0011" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -139,27 +139,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Qué opina sobre los medios de pagos ofrecidos?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0012" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0012" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0012" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0012" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0012" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -167,27 +167,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Qué opina sobre nuestro sistema de cobranzas?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0013" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0013" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0013" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0013" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0013" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -195,27 +195,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Qué opina sobre los plazos de entrega?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0014" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0014" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0014" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0014" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0014" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
@@ -223,27 +223,27 @@ verifyDataForm();
                     <div class="contenedor-fila">
                         <div class="contenedor-columna" style="text-align:left">¿Qué opina sobre nuestro sistema de envíos?</div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0015" value="5"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0015" value="4"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0015" value="3"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0015" value="2"><span class="metro-radio"></span></label>
                             </div>
                         </div>
                         <div class="contenedor-columna">
-                            <div class="radio '.$inline.'">
+                            <div class="radio ">
                                 <label class="radio "><input type="radio" name="resp0015" value="1"><span class="metro-radio"></span></label>
                             </div>
                         </div>
