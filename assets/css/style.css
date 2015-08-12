@@ -1,0 +1,131 @@
+/* CSS Document */
+
+html, body {
+    background-color: aliceblue;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.subcontainer {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    margin: 16px auto 20px 0;
+    max-width: 1200px;
+    padding: 0 0 40px 0;
+}
+.header_logo {padding: 20px;}
+.texto {padding: 20px;}
+.pregunta {padding-left: 20px; background-color: ghostwhite;}
+
+.contenedor-tabla{
+display: table;
+}
+.contenedor-fila{
+display: table-row;
+}
+.contenedor-columna{
+display: table-cell;
+padding:20px;
+text-align: center;
+}
+
+select, option {
+    letter-spacing: 0.02em;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+	background-color: #ffffff;
+    border: 1px solid #cccccc;
+	width: auto; 
+}
+
+textarea {
+    min-width: 64px;
+    min-height: 28px;
+    font-weight: 400;
+    line-height: 1.3636;
+    border-style: solid;
+    border-width: 2px;
+    background-clip: padding-box;
+    width: 450px;
+    height: 200px;
+    font-size: 16px;
+}
+
+.boton {padding: 0 0 0 20px;}
+
+input[type=submit] {
+    color: #FFF;
+    background-color: darkgreen;
+    border-color: transparent;
+    background-clip: border-box;
+}
+
+input[type=submit] {
+    /* padding: 4px 8px; */
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.3636;
+    border: 2px solid #cccccc;
+    background-clip: padding-box;
+}
+
+input[type=submit]:hover{
+    color: #FFF;
+    background-color: #4285f4;
+    border-color: transparent;
+    background-clip: border-box;
+}
+
+
+input[type="submit"].btn-block {
+    background-image: none;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    padding: 0 16px;
+    text-align: center;
+    text-transform: uppercase;
+	width: 25%;
+}
+
+.requerido {
+    font-size: 10px;
+    color: red;
+}
+.obligatorio {
+    font-size: 12px;
+    padding: 10px 0 0 0;
+}
+
