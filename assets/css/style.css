@@ -120,6 +120,33 @@ input[type="submit"].btn-block {
 	width: 25%;
 }
 
+.btn-block1 {
+    color: #FFF;
+    background-color: darkgreen;
+    border-color: transparent;
+    background-clip: border-box;
+    background-image: none;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    padding: 0 16px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 25%;        
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.3636;
+    border: 2px solid #cccccc;
+    background-clip: padding-box;
+    
+}
+
 .requerido {
     font-size: 10px;
     color: red;

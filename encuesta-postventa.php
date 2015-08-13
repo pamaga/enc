@@ -16,11 +16,12 @@ verifyDataForm();
    <link rel="stylesheet" type="text/css" href="assets/css/bootmetro-ui-light.css">
    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css">
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/js/jquery-1.10.0.min.js"></script>
 </head>
 
 <body>
 <div class="container">
-   <form method="post" action="saveq.php">
+   <form method="post" action="saveq.php" id="formEncuesta">
    <input type="hidden" name="id_vendedor" value="<?php if (isset($_GET["id_vendedor"]))echo $_GET["id_vendedor"];?>">
    <input type="hidden" name="id_cliente" value="<?php if (isset($_GET["id_cliente"]))echo $_GET["id_cliente"];?>">
    <input type="hidden" name="id_doc" value="<?php if (isset($_GET["id_doc"]))echo $_GET["id_doc"];?>">
@@ -257,7 +258,7 @@ verifyDataForm();
         </div>
         <div class="contenedor-fila">
              	<div class="radio inline">
-       				<select name="resp0001"> <option value="1">Me lo recomendó un amigo o conocido</option> <option value="2">Google</option> <option value="3">Otros Buscadores</option> <option value="4">Facebook</option> <option value="5">Twitter</option> <option value="6">Google+</option> <option value="7">Youtube</option> <option value="8">Otras redes sociales</option> <option value="9">Mercado Libre</option> <option value="10">Eventos y/o convenciones</option> <option value="11">TV</option> <option value="12">Publicidad Gráfica</option> <option value="13">Radio</option></select>
+       				<select name="resp0001"  id="resp0001"><option value="0">-- SELECCIONAR --</option><option value="1">Me lo recomendó un amigo o conocido</option> <option value="2">Google</option> <option value="3">Otros Buscadores</option> <option value="4">Facebook</option> <option value="5">Twitter</option> <option value="6">Google+</option> <option value="7">Youtube</option> <option value="8">Otras redes sociales</option> <option value="9">Mercado Libre</option> <option value="10">Eventos y/o convenciones</option> <option value="11">TV</option> <option value="12">Publicidad Gráfica</option> <option value="13">Radio</option></select>
              </div>
         </div>
         <div class="pregunta">
@@ -278,6 +279,43 @@ verifyDataForm();
     </div> <!--end subcontainer -->
     </form>
 </div> <!--end container -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".btn-primary").click(function(e){
+            e.preventDefault();   
+            enviar();
+        });
+
+        function enviar(){
+
+            if(validar()){
+                $("#formEncuesta").submit();
+            }
+        }
+
+        function validar(){
+                var bComplete=true;
+                var resp0009=$("input:radio[name=resp0009]:checked").val();    
+                var resp0010=$("input:radio[name=resp0010]:checked").val();    
+                var resp0011=$("input:radio[name=resp0011]:checked").val();    
+                var resp0012=$("input:radio[name=resp0012]:checked").val();    
+                var resp0013=$("input:radio[name=resp0013]:checked").val();    
+                var resp0014=$("input:radio[name=resp0014]:checked").val();    
+                var resp0015=$("input:radio[name=resp0015]:checked").val();  
+                
+                var resp0001=$("#resp0001 :checked").val();
+
+                if ( resp0001 == "0" || typeof resp0009 == "undefined" || typeof resp0010 == "undefined" || typeof resp0011 == "undefined" || typeof resp0012 == "undefined" || typeof resp0013 == "undefined" || typeof resp0014 == "undefined" || typeof resp0015 == "undefined"  ){
+                    bComplete=false;
+                }
+                if(!bComplete){
+                    alert("Por favor, complete todas las preguntas marcadas con '*'. Gracias");
+                }
+                return bComplete;
+        }
+   });
+</script>
 </body>
 </html>
 
