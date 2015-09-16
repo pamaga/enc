@@ -1,4 +1,6 @@
 <?php
+
+require_once "config.inc.php";
 if (php_uname('n') =="zeus"){
     define("db_host","127.0.0.1");
     define("db_user","root");
@@ -191,12 +193,12 @@ class Encuesta{
     private function loadVendedores(){
         if ( ! empty($this->aVendedores))return;
         
-        if (!$result = $this->mysql->query("SELECT id,nombre,apellido FROM vendedores")) {
+        if (!$result = $this->mysql->query("SELECT codigo,nombre,apellido FROM vendedores")) {
             printf("Error: %s\n", $mysql->error);
         }
         while ($oVend = $result->fetch_array(MYSQLI_ASSOC))
         {
-            $this->aVendedores[$oVend["id"]] = $oVend;
+            $this->aVendedores[$oVend["codigo"]] = $oVend;
         }
 
     }

@@ -166,7 +166,7 @@ $(function () {
 	<body>
 <script src="external/js/highcharts.js"></script>
 <script src="external/js/modules/exporting.js"></script>
-<form method="post" action="statsgrals.php">
+<form method="post" >
     Vendedor:
     <select name="filtro-vendedor">
          <option value='0'>-- TODOS --</option>
@@ -263,7 +263,7 @@ $(function () {
                 $('#winDelete').modal("show");
                 $(".btn.btn-primary.delete").click(function(){
                         $(".eliminando").replaceWith( "...eliminando" );
-                       var posting = $.post( "statsgrals.php", { "delete_encuesta": id } );
+                       var posting = $.post( "statsgrals-post.php", { "delete_encuesta": id } );
                          posting.done(function( data ) {
                             location.reload();
                         });
