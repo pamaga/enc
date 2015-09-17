@@ -69,11 +69,14 @@ function getRespConfig(){
         ,"6"=>"Google+"
         ,"7"=>"Youtube"
         ,"8"=>"Otras redes sociales"
-        ,"9"=>"Eventos y/o convenciones"
-        ,"10"=>"TV"
-        ,"11"=>"Publicidad Gráfica"
-        ,"12"=>"Radio"
+        ,"9"=>"Mercado Libre"
+        ,"10"=>"Eventos y/o convenciones"
+        ,"11"=>"TV"
+        ,"12"=>"Publicidad Gráfica"
+        ,"13"=>"Radio"
         ));
+   
+    
     $return["resp0002"]=array("opciones_generales"=>true,"pregunta"=>"Cómo fue atendido?","resp"=>$gralOptions);
     $return["resp0003"]=array("opciones_generales"=>true,"pregunta"=>"Tiempo en envío de respuesta?","resp"=>$gralOptions);
     $return["resp0004"]=array("opciones_generales"=>true,"pregunta"=>"Cortesía en la atención?","resp"=>$gralOptions);
@@ -184,6 +187,7 @@ function get_stats($type="GENERAL"){
 class Encuesta{
     
     private $aVendedores=array();
+    private $aPreguntas=false;
    
     public function __construct() {
         global $mysql;
@@ -208,6 +212,22 @@ class Encuesta{
         }else{
             return array("nombre"=>"","apellido"=>"");
         }
+        
+    }
+    public function getPreguntaByCode($code){
+            if($this->aPreguntas === false){
+                $this->aPreguntas = getRespConfig();
+            }
+            if(isset($this->aPreguntas[$code])) return $this->aPreguntas[$code]["pregunta"];
+            return "";
+        
+    }
+    public function getRespuestaByCode($code,$codResp){
+            if($this->aPreguntas === false){
+                $this->aPreguntas = getRespConfig();
+            }
+            if(isset($this->aPreguntas[$code]["resp"][$codResp])) return $this->aPreguntas[$code]["resp"][$codResp];
+            return "";
         
     }
     function getEncuesta($id=0){
@@ -244,12 +264,12 @@ class Encuesta{
         }
         return $_filter;
     }
-    function getAll($filters){
+    function getAll($filters=array()){
         $this->loadVendedores();
         $_filter= $this->_getFilter($filters);
         
          $return=array();
-         if (!$result = $this->mysql->query("SELECT id, DATE_FORMAT(ins_time,'%d/%m/%Y %H:%i:%s') as fecha, respuestas 
+         if (!$result = $this->mysql->query("SELECT id, DATE_FORMAT(ins_time,'%d/%m/%Y %H:%i:%s') as fecha,ins_time, respuestas 
                     FROM resp_pre_venta WHERE 1 ".$_filter)) {
             printf("Error: %s\n", $mysql->error);
         }

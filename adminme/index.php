@@ -132,9 +132,24 @@ require '_login.php';
                                  </div>
                              </a>
                         </div>
+                         
 
                       </div>
                    </div>
+                    <div class="metro span12">
+                         <div class="metro-section" id="section1">
+                            <a class="tile app imagetext bg-color-grayLight" href="export.php">
+                               <div class="image-wrapper">
+                              <span class="icon   icon-list-7"></span>
+                                </div>
+                              <div class="column-text">
+                               
+                                   <div class="app-label">Exportar Encuestas</div>
+                                 </div>
+                             </a>
+                        </div>
+                        
+                    </div>
                     <b>Ejemplo URL Preventa:</b> http://www.atenasventilacion.com.ar/encuesta/encuesta-preventa.php?id_cliente=1&id_vendedor=2&id_doc=3
                     <br/><b>Ejemplo URL Postventa:</b> http://www.atenasventilacion.com.ar/encuesta/encuesta-postventa.php?id_cliente=1&id_vendedor=2&id_doc=3
                 </div>
